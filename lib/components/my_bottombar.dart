@@ -18,7 +18,7 @@ class MyBottomBar extends StatelessWidget {
       onTap: onTap,
       selectedItemColor: Colors.white,
       unselectedItemColor: Colors.grey[300],
-      backgroundColor: Colors.pink,
+      backgroundColor: Colors.transparent,
       showSelectedLabels: false,
       showUnselectedLabels: false,
       elevation: 0,
@@ -27,8 +27,11 @@ class MyBottomBar extends StatelessWidget {
         BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: 'Home'),
         BottomNavigationBarItem(
             icon: Icon(Icons.favorite_border_outlined), label: 'Like'),
-        BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: 'Home'),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.message_outlined), label: 'Messages'),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.settings_accessibility_outlined),
+            label: 'Settings'),
       ],
     );
   }
